@@ -7,10 +7,12 @@
 $mahasiswa = [
     ["Zidane", "213040085", "ahmadzidane@gmail.com", "Teknik Informatika"],
     ["Faturrahman", "213040323", "fatur@gmail.com", "Teknik Informatika"],
-    ["Ahmad"]
+    ["Ahmad", "213034244", "ahmad@gmai.com", "Teknik Informatika"]
 ];
 
 // var_dump($mahasiswa)[0][2];
+// echo "<br>";
+// print_r($mahasiswa);
 ?>
 
 <?php foreach ($mahasiswa as $mhs) { ?>

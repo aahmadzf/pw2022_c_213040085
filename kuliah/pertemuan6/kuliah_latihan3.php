@@ -5,19 +5,50 @@ $mahasiswa = [
         "nama" => "Zidane",
         "npm" => "213040085",
         "email" => "ahmadzidane@gmail.com",
-        "jurusan" => "Teknik Informatika"
+        "jurusan" => "Teknik Informatika",
+        "gambar" => "pixel.png",
+        "angka" => "1"
     ],
     [
         "nama" => "Faturrahman",
         "npm" => "213040323",
         "email" => "fatur@gmail.com",
-        "jurusan" => "Teknik Informatika"
+        "jurusan" => "Teknik Industri",
+        "gambar" => "pixel8.png",
+        "angka" => "2"
     ],
     [
         "nama" => "Ahmad",
         "email" => "ahmad@gmail.com",
-        "jurusan" => "Teknik Informatika",
-        "npm" => "213040085"
+        "jurusan" => "Teknik Kimia",
+        "npm" => "2130234234",
+        "gambar" => "pixel3.png",
+        "angka" => "3"
+    ],
+    [
+        "nama" => "Khair",
+        "email" => "khairdd@gmail.com",
+        "jurusan" => "Teknik kedokteran",
+        "npm" => "213453663",
+        "gambar" => "pixel4.png",
+        "angka" => "4"
+    ],
+    [
+        "nama" => "Abdul",
+        "email" => "abdla@gmail.com",
+        "jurusan" => "Teknik seni",
+        "npm" => "21303123",
+        "gambar" => "pixel10.png",
+        "angka" => "5",
+
+    ],
+    [
+        "nama" => "Jamal",
+        "email" => "jamal@gmail.com",
+        "jurusan" => "Teknik hukum",
+        "npm" => "213034254",
+        "gambar" => "pixel6.png",
+        "angka" => "6"
     ]
 ];
 
@@ -58,19 +89,22 @@ $mahasiswa = [
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>
-                        <img src="img/gambar2.jpg" height="40" class="rounded-circle">
-                    </td>
-                    <td>Ahmad</td>
-                    <td>213040085</td>
-                    <td>ahmad@gmail.com</td>
-                    <td>Teknik Informatika</td>
-                    <td><a href="" class="btn badge bg-warning">Edit</a>
-                        <a href="" class="btn badge bg-danger">Delete</a>
-                    </td>
-                </tr>
+                <?php foreach ($mahasiswa as $mhs) { ?>
+                    <tr>
+                        <th scope="row"> <?php echo $mhs["angka"]; ?></th>
+                        <td>
+                            <img src="img/<?php echo $mhs["gambar"]; ?>" height="50" class="rounded-circle">
+                        </td>
+                        <td><?php echo $mhs["nama"] ?></td>
+                        <td><?php echo $mhs["npm"] ?></td>
+                        <td><?php echo $mhs["email"] ?></td>
+                        <td><?php echo $mhs["jurusan"] ?></td>
+                        <td>
+                            <a href="" class="btn badge bg-warning">Edit</a>
+                            <a href="" class="btn badge bg-danger">Delete</a>
+                        </td>
+                    </tr>
+                <?php } ?>
             </tbody>
         </table>
 
