@@ -1,0 +1,36 @@
+*{
+          margin: 0;
+          padding: 0;
+      }
+      
+      .text h2{
+          text-align: center;
+          text-align: center;
+          background-color: #0094D5;
+          color: #fff;
+          border-radius: 20px;
+          margin: 0 30rem;
+      }
+      
+      .image{
+          text-align: center;
+      }
+      
+      .aksi{
+          padding: 10px;
+      }
+      
+      .find-key{
+          margin-right: 5rem;
+      }
+      
+      .input-find{
+          margin-left: 50rem;
+      }
+      
+      .table{
+          margin-right: 5rem;
+      }
+      .image{
+          margin: 2rem 0;
+      }
